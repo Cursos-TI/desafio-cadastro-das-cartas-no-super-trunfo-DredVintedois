@@ -1,22 +1,53 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    char codigo_da_carta[20];
+    char estado[50];
+    char cidade[50];
+    int populacao;
+    float area;
+    float pib;
+    int pontos_turisticos;
+
+    printf("Bem vindo ao Super trunfo\n\n");
+
+    printf("Escreva o codigo da carta:");
+    scanf("%s", &codigo_da_carta);
+
+    printf("Escreva o nome do estado: ");
+    scanf("%s", &estado);
+
+    printf("Escreva o nome da cidade: ");
+    scanf("%s", &cidade);
+
+    printf("Escreva a população da cidade: ");
+    scanf("%d", &populacao);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    printf("Escreva a área da cidade: ");
+    scanf("%f", &area);
+
+    printf("Escreva o PIB da cidade:");
+    scanf("%f", &pib);
+
+    printf("Escreva o número de pontos turísticos da cidade: ");
+    scanf("%d", &pontos_turisticos);
+
+    printf("O codigo da carta é: %s\n", codigo_da_carta);
+    printf("O seu estado é: %s\n", estado);
+    printf("A sua cidade é: %s\n", cidade);
+    printf("A população da cidade é de: %d habitantes \n", populacao);
+    printf("A área da cidade é de: %.2f(km²)\n", area);
+    printf("O PIB da cidade é %.2f Bilhões de Reais\n", pib);
+    printf("A cidade tem %d pontos turísticos\n", pontos_turisticos);
+
+    printf("\n\n");
+    printf("Obrigado por jogar Super Trunfo!\n");
 
     return 0;
+
+
+
+
 }
